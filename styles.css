@@ -1,0 +1,27 @@
+html{
+color:ivory;
+}
+
+body{
+  background-color: tan;
+  box-sizing: border-box;
+}
+
+
+.col1,.col2{
+  width:50%;
+  float:left;
+}
+
+
+.city1{
+  text-align: center;
+  width:100%;
+  image-orientation: center;
+}
+@media and screen (max-width:640px){
+ .col1,.col2{
+   float: none;
+   width:100%;
+ }
+}

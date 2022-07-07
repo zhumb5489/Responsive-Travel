@@ -1,71 +1,105 @@
+@charset "UTF-8";
+
 /*
 Author: Zachary Humbard
 Assignment: Responsive Travel
 Filename:styles.css
 Date:07/05/2022
 */
-
-html{
-color:black;
+html {
+  color: black;
 }
 
-body{
-  background-color: tan;
+body {
+  background-color: #33aacc;
+  border-radius: 5px;
 }
 
-.container{
-  width:80%;
+nav a {
+  width: 100px;
+  display: inline-block;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-family: serif;
+  color: white;
 }
-header{
-  text-align: center;
-}
-.section{
 
+nav>ul {
+  width: 90%;
+  background-color: grey;
+  overflow: auto;
+  list-style: none;
 }
-img{
+
+nav a:hover {
+  color: blue;
+}
+
+.logo {
   display: none;
 }
-.col1,.col2{
-  width:100%;
+
+header {
+  text-align: center;
+  font-size: 2em;
+}
+
+.col1, .col2, .col3 {
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
   text-align: center;
 }
 
-.city1{
-  text-align: center;
-  width:100%;
-  image-orientation: center;
-}
-
-h2{
-  text-align: center;
-}
-footer{
+footer {
   clear: both;
 }
-.buttons{
-  clear:both;
-}
-/*Alternate media styles*/
-@media screen and (min-width:550px)
-{
- .col1,.col2{
-width: 100%;
- }
- img{display:inline-block;
-   width: 100%;
- }
-}
-@media screen and (min-width:800px){
-  .col1,.col2{
-    float:left;
-    width:50%;
-  }
-}
 
-@media screen and (min-width: 1000px){
-  .city1{
-    width:75%;
+/*Alternate media styles*/
+@media screen and (min-width:550px) {
+  .col2 {
+    float: left;
+    width: 50%
+  }
+
+  .col3 {
+    float: right;
+    width: 49%;
+    border-left: 2px solid black;
+  }
+
+  .logo {
+    display: block;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media screen and (min-width:700px) {
+  .col1 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  li {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .col1, .col2, .col3 {
+    width: 48%;
+  }
+
+  nav>ul {
+    width: 100%;
+  }
+}
